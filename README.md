@@ -5,7 +5,7 @@ A simple python script to automatically backup files of an app to Google Drive a
 ------------
 
 
-#Setup
+# Setup
 
 GDAutoBackup requires you to create a project on the Google API Console and create an OAuth2 Client ID to work. Here is how to do it:
 
@@ -30,7 +30,7 @@ GDAutoBackup requires you to create a project on the Google API Console and crea
 
 ------------
 
-#Downloading
+# Downloading
 
 You can download the .py version from the source code at GDAutoBackup.py. To run it, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
 
