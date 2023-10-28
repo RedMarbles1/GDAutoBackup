@@ -6,6 +6,7 @@ A simple python script to automatically backup files of an app to Google Drive a
 
 
 #Setup
+
 GDAutoBackup requires you to create a project on the Google API Console and create an OAuth2 Client ID to work. Here is how to do it:
 
 1. Go to [APIs Console](https://console.developers.google.com/iam-admin/projects "APIs Console") and make your own project.
@@ -30,7 +31,8 @@ GDAutoBackup requires you to create a project on the Google API Console and crea
 ------------
 
 #Downloading
-You can either grab the .exe version of it from [releases](https://github.com/RedMarbles1/GDAutoBackup/releases/latest "releases") or use the .py version in the source code. To run the .py version, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
+
+You can download the .py version from the source code at GDAutoBackup.py. To run it, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
 
 # Usage
 
