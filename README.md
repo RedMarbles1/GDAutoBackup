@@ -28,6 +28,7 @@ GDAutoBackup requires you to create a project on the Google API Console and crea
 6. Rename the file to client_secrets.json and place it in the same directory as GDAutoBackup.
 
 ------------
+
 #Downloading
 You can either grab the .exe version of it from [releases](https://github.com/RedMarbles1/GDAutoBackup/releases/latest "releases") or use the .py version in the source code. To run the .py version, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
 
@@ -39,6 +40,7 @@ You can either grab the .exe version of it from [releases](https://github.com/Re
     -h : Displays default help message
     -l AppName : Specify the app to launch. Requires the app to be added to apps.json beforehand.
     Launching GDAutoBackup without any arguments will put you into editor mode where you can edit apps.json.
+    You should be able to create a shortcut with the program and the launch arguments if you don't want to manually launch it and put it into any launcher that you want.
     
     
 
