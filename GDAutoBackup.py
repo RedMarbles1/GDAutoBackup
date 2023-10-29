@@ -45,6 +45,13 @@ def restore_backup(appname, mainfolder_id):
     for file in folder_content:
         file.GetContentFile(os.path.join(savepath, file['title']))
 
+# Load app information from a JSON file
+if os.path.isfile("apps.json"):
+    with open("apps.json", "r") as openfile:
+        appjson = json.load(openfile)
+else:
+    appjson = {}
+
 # Function to update the JSON configuration interactively
 def update_config(config):
     while True:
@@ -55,12 +62,12 @@ def update_config(config):
             print(f"Save Path: {app_info.get('savepath', '')}")
             print()
 
-        action = input("Select an action (add/edit/remove/quit): ").lower()
+        action = input("Select an action (add/edit/remove/clear/quit): ").lower()
 
         if action == "add":
             appname = input("Enter the app name: ")
             path = input("Enter the app path: ").replace("\\", "/")
-            savepath = input("Enter the save path (optional): ").replace("\\", "/")
+            savepath = input("Enter the save path: ").replace("\\", "/")
             config[appname] = {"path": path}
             if savepath:
                 config[appname]["savepath"] = savepath
@@ -85,12 +92,14 @@ def update_config(config):
                 print(f"Removed app '{appname}' from the configuration.")
             else:
                 print(f"App '{appname}' not found in the configuration.")
-
+        elif action == "clear":
+            config.clear()
+            print("All apps removed from the configuration.")
         elif action == "quit":
             break
 
         else:
-            print("Invalid action. Please enter 'add', 'edit', 'remove', or 'quit'.")
+            print("Invalid action. Please enter 'add', 'edit', 'remove', 'clear', or 'quit'.")
 
         with open("apps.json", "w") as json_file:
             json.dump(config, json_file, indent=4)
@@ -102,10 +111,6 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument("-l", "--launch", dest="launch", metavar="AppName", help="Specify app name to launch. The app and its paths must be added to apps.json beforehand. Launch the program with no arguments to go into editor mode and add a new app.")
 args = parser.parse_args()
-
-# Load app information from a JSON file
-with open("apps.json", "r") as openfile:
-    appjson = json.load(openfile)
 
 # Interactive configuration update if no launch argument is provided
 if not args.launch:
