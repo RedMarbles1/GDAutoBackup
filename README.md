@@ -32,7 +32,7 @@ GDAutoBackup requires you to create a project on the Google API Console and crea
 
 # Downloading
 
-You can download the .py version from the source code at GDAutoBackup.py. To run it, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
+You can get the latest version directly from releases. To run it, you will need python and [PyDrive2](https://github.com/iterative/PyDrive2 "PyDrive2") installed.
 
 # Usage
 
