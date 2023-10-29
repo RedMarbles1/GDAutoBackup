@@ -42,7 +42,8 @@ You can get the latest version directly from releases. To run it, you will need 
     -h : Displays default help message
     -l AppName : Specify the app to launch. Requires the app to be added to apps.json beforehand.
     Launching GDAutoBackup without any arguments will put you into editor mode where you can edit apps.json.
-    You should be able to create a shortcut with the program and the launch arguments if you don't want to manually launch it and put it into any launcher that you want.
+You should be able to create a shortcut with the program and the launch arguments if you don't want to manually launch it and put it into any launcher that you want.
+Set the Start in folder in shortcut properties to the same folder with the client_secret.json file to prevent crashes.
     
     
 
