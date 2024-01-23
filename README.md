@@ -1,5 +1,10 @@
 # GDAutoBackup
 ------------
+# PLEASE FOR THE LOVE OF GOD DO NOT USE THIS 
+This tool is pretty broken and I have no intent to fix it at all
+So please just do a favor to yourself and use [PySaveBackup](https://github.com/RedMarbles1/PySaveBackup) with the Google Drive app installed instead.
+Do not expect me to fix any issues with this, either do it yourself or get someone else to do it because this project is pretty much deprecated.
+
 A simple python script to automatically backup files of an app to Google Drive after launch, and restore them back before launch. Basically Steam cloud saves, but with Google Drive.
 
 ------------
